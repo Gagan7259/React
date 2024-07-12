@@ -6,32 +6,63 @@ class Form extends Component {
 
     this.state = {
       username: "",
+      comments: "",
+      topic: "React",
     };
   }
+
   handleUserChange = (event) => {
     this.setState({
-      username: event.target.value
+      username: event.target.value,
+    });
+  };
+  handleCoomentChange = (event) => {
+    this.setState({
+      comments: event.target.value,
     });
   };
 
+  handleTopicChange = (event) => {
+    this.setState({
+      topic: event.target.value,
+    });
+  };
+
+  submitHandler = (event) => {
+    alert(`${this.state.username} ${this.state.comments} ${this.state.topic}`);
+    event.preventDefault();
+  };
+
   render() {
+    const { username, comments, topic } = this.state;
     return (
       <div>
-        <form>
+        <form onSubmit={this.submitHandler}>
           <div>
             <label htmlFor="name">UserName</label>
             <input
               type="text"
-              value={this.state.usename}
+              value={username}
               onChange={this.handleUserChange}
             />
           </div>
           <div>
-            <label htmlFor="name">Password</label>
-            <input type="text" />
+            <label htmlFor="">Comments</label>
+            <textarea
+              onChange={this.handleCoomentChange}
+              value={comments}
+            ></textarea>
           </div>
           <div>
-            <button>Submit</button>
+            <label htmlFor="name">Topic</label>
+            <select value={topic} onChange={this.handleTopicChange}>
+              <option value="react">React</option>
+              <option value="Angular">Angular</option>
+              <option value="Vue">VueJs</option>
+            </select>
+          </div>
+          <div>
+            <button type="submit">Submit</button>
           </div>
         </form>
       </div>

@@ -18,7 +18,8 @@ export class ParentMethodpeops extends Component {
   render() {
     return (
       <div>
-        <Child grret={this.greetHandler} />
+        {/* <Child grret={this.greetHandler} /> */}
+        <Child a={this.greetParent} />
       </div>
     );
   }

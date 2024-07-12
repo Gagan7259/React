@@ -1,11 +1,11 @@
 import './App.css';
-import Components1 from './Component/Components';
-
+import ImportedElemets from './Component/ImportedElements';
+// import ComponentsImpoerted from './Component/Tasks/ComponentsImpoerted';
 function App() {
   return (
     <div className="App">
-      <Components1 />
-      
+      <ImportedElemets />
+      {/* <ComponentsImpoerted /> */}
     </div>
   );
 }
