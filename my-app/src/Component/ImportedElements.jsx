@@ -1,8 +1,11 @@
 import React from "react";
+// import Posts from "./Axios/Posts";
+import PostForm from "./Axios/PostForm";
+// import MainContex from "./Contex/MainContex";
 // import USer from "./ExamplePropsssHOP/USer";
-import Counter from "./ExamplePropsssHOP/Counter";
-import Hover from "./ExamplePropsssHOP/Hover";
-import MentalComponent from "./ExamplePropsssHOP/MentalComponent";
+// import Counter from "./ExamplePropsssHOP/Counter";
+// import Hover from "./ExamplePropsssHOP/Hover";
+// import MentalComponent from "./ExamplePropsssHOP/MentalComponent";
 // import HigherOrderComponets from "./HigherOrderComponets/HigherOrderComponets";
 // import HoverCounter from "./HigherOrderComponets/HoverCounter";
 // import Hero from "./Error/Hero";
@@ -85,16 +88,20 @@ function ImportedElemets() {
       <USer
         render={(isLoggedIn) => isLoggedIn ? "Gagan" : "Guest"}/> */}
 
-      <MentalComponent
+      {/* <MentalComponent
         render={(count, IncrementHandler) => (
           <Counter count={count} increment={IncrementHandler} />
         )}
-      />
-      <MentalComponent
+      /> */}
+      {/* <MentalComponent
         render={(count, IncrementHandler) => (
           <Hover count={count} increment={IncrementHandler} />
         )}
-      />
+      /> */}
+
+      {/* <MainContex /> */}
+      {/* <Posts /> */}
+      <PostForm />
     </div>
   );
 }
