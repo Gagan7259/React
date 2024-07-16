@@ -1,6 +1,11 @@
 import React from "react";
+// import HookCpounter from "../Hooks/Func/HookCpounter";
+// import Items from "../Hooks/Items";
 // import Posts from "./Axios/Posts";
-import PostForm from "./Axios/PostForm";
+// import PostForm from "./Axios/PostForm";
+// import ClaassCounter from "../Hooks/Class/ClaassCounter";
+// import Functionaaa from "../Hooks/Func/Functionaaa";
+// import Cart from "../Hooks/Func/Cart";
 // import MainContex from "./Contex/MainContex";
 // import USer from "./ExamplePropsssHOP/USer";
 // import Counter from "./ExamplePropsssHOP/Counter";
@@ -8,7 +13,8 @@ import PostForm from "./Axios/PostForm";
 // import MentalComponent from "./ExamplePropsssHOP/MentalComponent";
 // import HigherOrderComponets from "./HigherOrderComponets/HigherOrderComponets";
 // import HoverCounter from "./HigherOrderComponets/HoverCounter";
-// import Hero from "./Error/Hero";
+import UseStateCounter from "../Hooks/UseStateCounter";
+// import ErrorBoudry from "./ErrorBoudry.jsx/ErrorBoudry";
 // import ErrorBoudry from "./ErrorBoudry.jsx/ErrorBoudry";
 // import ParentCompoent from "./Componentss/ParentCompoent";
 // import Inlinstyle from "./inlineStyle/Inlinstyle";
@@ -37,13 +43,12 @@ import PostForm from "./Axios/PostForm";
 function ImportedElemets() {
   return (
     <div>
-      {/* <Greet />
-      <Hello />
-
-      <H name="Manoj" heroName="Batman" />
+      {/* <Greet /> */}
+      {/* <Hello /> */}
+      {/* <H name="Manoj" heroName="Batman" />
       <H name="Gagan" heroName="Naruto " />
-      <H name="Omar" heroName="Spider man" />
-      <Display name="Gagan" /> */}
+      <H name="Omar" heroName="Spider man" /> */}
+      {/* <Display name="Gagan" /> */}
       {/* <Message /> */}
       {/* <DateDisplay /> */}
       {/* <Counter /> */}
@@ -54,40 +59,31 @@ function ImportedElemets() {
       {/* <Class1 /> */}
       {/* <ParentMethodpeops /> */}
       {/* <Rendering /> */}
-
       {/* <NameList /> */}
-
       {/* <Stylesheet /> */}
-
       {/* <Inlinstyle /> */}
-
       {/* <h1 className="error">Normal Css file</h1>
       <h2 className={styles.success}>Module css file</h2> */}
-
       {/* <Form /> */}
       {/* <Lifecylce /> */}
       {/* <FragmentDemo /> */}
       {/* <Table /> */}
-
       {/* <ParentCompoent /> */}
       {/* <Refmemo /> */}
       {/* <ClassRef /> */}
-
       {/* <Focusinput /> */}
       {/* <FRinputParent /> */}
       {/* <ErrorBoudry>
-        <Hero heroName="Joker" />
+        {" "}
+        
         <Hero heroName="Batman" />
       </ErrorBoudry> */}
-
       {/* <HigherOrderComponets />
       <HoverCounter /> */}
-
       {/* <Counter />
       <Hover />
       <USer
         render={(isLoggedIn) => isLoggedIn ? "Gagan" : "Guest"}/> */}
-
       {/* <MentalComponent
         render={(count, IncrementHandler) => (
           <Counter count={count} increment={IncrementHandler} />
@@ -98,10 +94,16 @@ function ImportedElemets() {
           <Hover count={count} increment={IncrementHandler} />
         )}
       /> */}
-
       {/* <MainContex /> */}
-      {/* <Posts /> */}
-      <PostForm />
+      {/* <Posts />
+      <PostForm /> */}
+      {/* <ClaassCounter />
+      <Functionaaa /> */}
+      {/* <Cart /> */}
+      {/* <HookCpounter /> */}
+      {/* <Items /> */}
+      {/* <UseEffecthook /> */}
+      <UseStateCounter />
     </div>
   );
 }

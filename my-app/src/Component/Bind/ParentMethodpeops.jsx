@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Child from "./Child";
 
-export class ParentMethodpeops extends Component {
+ class ParentMethodpeops extends Component {
   constructor(props) {
     super(props);
 
