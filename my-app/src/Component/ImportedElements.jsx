@@ -1,4 +1,7 @@
 import React from "react";
+// import MouseContainer from "../Hooks/MouseContainer";
+import InterVelClassCounter from "../Hooks/InterVelClassCounter";
+import IntervelHook from "../Hooks/IntervelHook";
 // import HookCpounter from "../Hooks/Func/HookCpounter";
 // import Items from "../Hooks/Items";
 // import Posts from "./Axios/Posts";
@@ -13,7 +16,10 @@ import React from "react";
 // import MentalComponent from "./ExamplePropsssHOP/MentalComponent";
 // import HigherOrderComponets from "./HigherOrderComponets/HigherOrderComponets";
 // import HoverCounter from "./HigherOrderComponets/HoverCounter";
-import UseStateCounter from "../Hooks/UseStateCounter";
+// import UseStateCounter from "../Hooks/UseStateCounter";
+// import ClaassCounter from "../Hooks/Class/ClaassCounter";
+// import ClassMouse from "../Hooks/Func/ClassMouse";
+// import HookMouseOver from "../Hooks/Func/HookMouseOver";
 // import ErrorBoudry from "./ErrorBoudry.jsx/ErrorBoudry";
 // import ErrorBoudry from "./ErrorBoudry.jsx/ErrorBoudry";
 // import ParentCompoent from "./Componentss/ParentCompoent";
@@ -73,9 +79,7 @@ function ImportedElemets() {
       {/* <ClassRef /> */}
       {/* <Focusinput /> */}
       {/* <FRinputParent /> */}
-      {/* <ErrorBoudry>
-        {" "}
-        
+      {/* <ErrorBoudry> 
         <Hero heroName="Batman" />
       </ErrorBoudry> */}
       {/* <HigherOrderComponets />
@@ -97,13 +101,19 @@ function ImportedElemets() {
       {/* <MainContex /> */}
       {/* <Posts />
       <PostForm /> */}
-      {/* <ClaassCounter />
-      <Functionaaa /> */}
+      {/* <ClaassCounter /> */}
+      {/* <Functionaaa /> */}
       {/* <Cart /> */}
       {/* <HookCpounter /> */}
       {/* <Items /> */}
       {/* <UseEffecthook /> */}
-      <UseStateCounter />
+      {/* <UseStateCounter /> */}
+      {/* <ClaassCounter /> */}
+      {/* <ClassMouse /> */}
+      {/* <HookMouseOver /> */}
+      {/* <MouseContainer /> */}
+      <InterVelClassCounter />
+      <IntervelHook />
     </div>
   );
 }

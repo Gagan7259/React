@@ -6,6 +6,7 @@ export class ClaassCounter extends Component {
 
     this.state = {
       count: 0,
+      name: "",
     };
   }
 
@@ -18,6 +19,13 @@ export class ClaassCounter extends Component {
   render() {
     return (
       <div>
+        <input
+          type="text"
+          value={this.state.name}
+          onChange={(e) => {
+            this.setState({ name: e.target.value });
+          }}
+        />
         <button onClick={this.incrementHandler}>
           {this.state.count} items Added
         </button>
