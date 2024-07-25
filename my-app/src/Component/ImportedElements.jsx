@@ -1,7 +1,34 @@
 import React from "react";
+import ParentFour from "./RenderComponents/Example date/ParentFour";
+import ParentFive from "./RenderComponents/Example 5/ParentFive";
+// import RenderuseState from "./RenderComponents/RenderuseState";
+// import UseReducerhh from "./RenderComponents/UseReducerhh";
+// import ObjectUsestate from "./RenderComponents/ObjectUsestate";
+// import ArrayuseState from "./RenderComponents/ArrayuseState";
+// import ArrSatet from "./RenderComponents/ArrSatet";
+// import Parents from "./RenderComponents/Parent child/Parents";
+// import Parent from "./RenderComponents/Optimization/Parent";
+// import Grandparent from "./RenderComponents/Optimization/Grandparent";
+// import ParentOne from "./RenderComponents/EXAMPLE2/ParentOne";
+// import DataHooks from "../Hooks/DataHooks";
+// import Contextmain from "../Hooks/Class/Contexhook/Contextmain";
+// import UseReducer from "../Hooks/UseReducer";
+// import UserCounterReducer from "../Hooks/Func/UserCounterReducer";
+// import Counterthree from "../Hooks/Func/Counterthree";
+// import Maincomp from "../Hooks/UserContex$userReducer.jsx/Maincomp";
+// import FetachAPiReducer from "../Hooks/UseReducerApi/FetachAPiReducer";
+// import ReducerFetchApi from "../Hooks/UseReducerApi/ReducerFetchApi";
+// import ParentComponent from "../Hooks/CallbackHook/Example-1/ParentComponent";
+// import Counter from "../Hooks/MemoHook/Counter";
+// import Focus from "../Hooks/CallRef/Focus";
+// import ClassTimer from "../Hooks/CallRef/ClassTimer";
+// import ReactHookTimer from "../Hooks/CallRef/ReactHookTimer";
+// import DocTitle from "./CustomHooks/DocTitle";
+// import DocTitleTwo from "./CustomHooks/DocTitleTwo";
+// import Counter from "./CustomHooks/Counter";
 // import MouseContainer from "../Hooks/MouseContainer";
-import InterVelClassCounter from "../Hooks/InterVelClassCounter";
-import IntervelHook from "../Hooks/IntervelHook";
+// import InterVelClassCounter from "../Hooks/InterVelClassCounter";
+// import IntervelHook from "../Hooks/IntervelHook";
 // import HookCpounter from "../Hooks/Func/HookCpounter";
 // import Items from "../Hooks/Items";
 // import Posts from "./Axios/Posts";
@@ -112,8 +139,37 @@ function ImportedElemets() {
       {/* <ClassMouse /> */}
       {/* <HookMouseOver /> */}
       {/* <MouseContainer /> */}
-      <InterVelClassCounter />
-      <IntervelHook />
+      {/* <InterVelClassCounter /> */}
+      {/* <IntervelHook /> */}
+      {/* <DataHooks /> */}
+      {/* <Contextmain /> */}
+      {/* <UseReducer /> */}
+      {/* <UserCounterReducer /> */}
+      {/* <Counterthree /> */}
+      {/* <Maincomp /> */}
+      {/* <FetachAPiReducer /> */}
+      {/* <ReducerFetchApi /> */}
+      {/* <ParentComponent /> */}
+      {/* <hr /> */}
+      {/* <Counter />  */}
+      {/* <Focus />
+      <ClassTimer /> */}
+      {/* <ReactHookTimer /> */}
+      {/* <DocTitle />
+      <DocTitleTwo />
+      <Counter /> */}
+      {/* <Form /> */}
+      {/* <RenderuseState /> */}
+      {/* <UseReducerhh/> */}
+      {/* <ObjectUsestate /> */}
+      {/* <ArrayuseState /> */}
+      {/* <ArrSatet /> */}
+      {/* <Parents /> */}
+      {/* <Parent /> */}
+      {/* <Grandparent /> */}
+      {/* <ParentOne /> */}
+      {/* <ParentFour /> */}
+      <ParentFive />
     </div>
   );
 }
