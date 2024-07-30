@@ -1,6 +1,7 @@
 import React from "react";
 import ParentFour from "./RenderComponents/Example date/ParentFour";
 import ParentFive from "./RenderComponents/Example 5/ParentFive";
+import ParentSix from "./RenderComponents/ContextRender/ParentSix";
 // import RenderuseState from "./RenderComponents/RenderuseState";
 // import UseReducerhh from "./RenderComponents/UseReducerhh";
 // import ObjectUsestate from "./RenderComponents/ObjectUsestate";
@@ -169,7 +170,8 @@ function ImportedElemets() {
       {/* <Grandparent /> */}
       {/* <ParentOne /> */}
       {/* <ParentFour /> */}
-      <ParentFive />
+      {/* <ParentFive /> */}
+      <ParentSix />
     </div>
   );
 }
