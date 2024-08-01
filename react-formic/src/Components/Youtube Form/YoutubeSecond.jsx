@@ -1,17 +1,17 @@
 import {
   ErrorMessage,
+  FastField,
   Field,
   FieldArray,
   Form,
   Formik,
-  FastField,
 } from "formik";
-import React from "react";
+import React, { useState } from "react";
 import * as Yup from "yup";
 import TextError from "../TextError/TextError";
 
 const initialValues = {
-  name: "Gagan",
+  name: "",
   email: "",
   channel: "",
   comments: "",
@@ -24,8 +24,25 @@ const initialValues = {
   phonenumbers: ["", ""],
   phNumbers: [""],
 };
-const onSubmit = (values) => {
-  console.log("Form Data", values);
+const savedValues = {
+  name: "Gagan",
+  email: "gagan@gmail.com",
+  channel: "Naruto",
+  comments: "ghcfgvjhk",
+  address: "",
+  social: {
+    facebook: "",
+    twitter: "",
+    comments: "",
+  },
+  phonenumbers: ["", ""],
+  phNumbers: [""],
+};
+const onSubmit = (values, onSubmitProps) => {
+  // console.log("Form Data", values);
+  console.log("Form Data", onSubmitProps);
+  onSubmitProps.setSubmittimg(false);
+  onSubmitProps.resetForm();
 };
 
 const validationSchema = Yup.object({
@@ -42,12 +59,15 @@ const validateComments = (value) => {
   return error;
 };
 function YoutubeSecond() {
-  console.log("visited Feilds");
+  const [FormValues, setFormValues] = useState(null);
+  // console.log("visited Feilds");
   return (
     <Formik
-      initialValues={initialValues}
+      initialValues={FormValues || initialValues}
       validationSchema={validationSchema}
       onSubmit={onSubmit}
+      enableReinitialize
+      // validateOnMount
     >
       {(formik) => {
         console.log("Formik props ", formik);
@@ -86,7 +106,8 @@ function YoutubeSecond() {
                 {(props) => {
                   console.log("feild render");
                   const { field, form, meta } = props;
-                  console.log("Render Props ", props);
+                   console.log(form)
+                  // console.log("Render Props ", props);
                   return (
                     <div>
                       <input type="text" name="address" {...field} />
@@ -146,23 +167,46 @@ function YoutubeSecond() {
                 }}
               </FieldArray>
             </div>
-            <button
+            {/* <button
               type="button"
               onClick={() => {
-                formik.validateField("comments");
+                formik.setFieldTouched("comments");
               }}
             >
-              Validate comments
+              visited comments
             </button>
             <button
               type="button"
               onClick={() => {
-                formik.validateField();
+                formik.validateForm();
               }}
             >
               validate All
             </button>
-            <button type="submit">submit</button>
+            <button
+              type="button"
+              onClick={() => {
+                formik.setTouched();
+              }}
+            >
+              visit feilds
+            </button> */}
+
+            {/* <button type="submit" disabled={!(formik.dirty && formik.isValid)}>
+              submit
+            </button> */}
+            <button type="submit" disabled={formik.isSubmitting}>
+              submit
+            </button>
+            <button
+              type="submit"
+              onClick={() => {
+                setFormValues(savedValues);
+              }}
+            >
+              saved Data
+            </button>
+            <button type="reset">Reset</button>
           </Form>
         );
       }}
